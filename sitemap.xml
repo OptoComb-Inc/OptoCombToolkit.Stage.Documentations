@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="None"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/"/>
+    </url>
+    <url>
+        <loc>Noneapi/iaxisinfo/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/iaxisinfo/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/iaxisinfo/"/>
+    </url>
+    <url>
+        <loc>Noneapi/istage/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage/"/>
+    </url>
+    <url>
+        <loc>Noneapi/istage_config/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage_config/"/>
+    </url>
+    <url>
+        <loc>Noneapi/kohzustage_config/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/kohzustage_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/kohzustage_config/"/>
+    </url>
+    <url>
+        <loc>Noneintro/management/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/management/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/management/"/>
+    </url>
+    <url>
+        <loc>Noneintro/provide/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/provide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/provide/"/>
+    </url>
+    <url>
+        <loc>Nonequick_start/quick_start/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonequick_start/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/quick_start/quick_start/"/>
+    </url>
+    <url>
+        <loc>Nonesample_code/normal/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/normal/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/normal/"/>
+    </url>
+    <url>
+        <loc>Nonesample_code/polling/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/polling/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/polling/"/>
+    </url>
+    <url>
+        <loc>Nonezh/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="None"/>
+    </url>
+    <url>
+        <loc>Nonezh/api/iaxisinfo/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/iaxisinfo/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/iaxisinfo/"/>
+    </url>
+    <url>
+        <loc>Nonezh/api/istage/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage/"/>
+    </url>
+    <url>
+        <loc>Nonezh/api/istage_config/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage_config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage_config/"/>
+    </url>
+    <url>
+        <loc>Nonezh/api/kohzustage_config/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/kohzustage_config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/kohzustage_config/"/>
+    </url>
+    <url>
+        <loc>Nonezh/intro/management/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/management/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/management/"/>
+    </url>
+    <url>
+        <loc>Nonezh/intro/provide/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/provide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/provide/"/>
+    </url>
+    <url>
+        <loc>Nonezh/quick_start/quick_start/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/quick_start/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonequick_start/quick_start/"/>
+    </url>
+    <url>
+        <loc>Nonezh/sample_code/normal/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/normal/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/normal/"/>
+    </url>
+    <url>
+        <loc>Nonezh/sample_code/polling/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/polling/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/polling/"/>
+    </url>
+</urlset>

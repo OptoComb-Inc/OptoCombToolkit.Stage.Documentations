@@ -1,0 +1,1850 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="OptoComb,Inc.">
+      
+      
+      
+        <link rel="prev" href="../../quick_start/quick_start/">
+      
+      
+        <link rel="next" href="../istage_config/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>IStageインターフェース - OptoComb 神津ステージ開発ドキュメント</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%2013h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#istage" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="OptoComb 神津ステージ開発ドキュメント" class="md-header__button md-logo" aria-label="OptoComb 神津ステージ開発ドキュメント" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OptoComb 神津ステージ開発ドキュメント
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              IStageインターフェース
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="言語切り替え">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/api/istage/" hreflang="zh" class="md-select__link">
+              中文（简体）
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OptoComb-Inc/OptoCombToolkit.Stage.Documentations" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OptoCombToolkit.Stage.Documentations
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  はじめに
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../intro/provide/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  イントロダクション
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../quick_start/quick_start/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  クイックスタート
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  APIリファレンス
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sample_code/normal/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  サンプルコード
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OptoComb 神津ステージ開発ドキュメント" class="md-nav__button md-logo" aria-label="OptoComb 神津ステージ開発ドキュメント" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OptoComb 神津ステージ開発ドキュメント
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OptoComb-Inc/OptoCombToolkit.Stage.Documentations" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OptoCombToolkit.Stage.Documentations
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    イントロダクション
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            イントロダクション
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/provide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    パッケージの提供方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用及び管理方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick_start/quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    クイックスタート
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    APIリファレンス
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            APIリファレンス
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    IStageインターフェース
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    IStageインターフェース
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロパティ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プロパティ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stageconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      StageConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axesready" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesReady
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axesoriginready" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesOriginReady
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axesemergencystatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesEmergencyStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axescontrollererror" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesControllerError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axessoftlimitstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesSoftLimitStatus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      メソッド
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="メソッド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jogmoveintdouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      JogMove(int,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moveabsintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveAbs(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moverelintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveRel(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmoveint" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMove(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmove" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMove()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopall" class="md-nav__link">
+    <span class="md-ellipsis">
+      StopAll()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#releaseemergency" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReleaseEmergency()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateaxisstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      UpdateAxisStatus()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getexpectaccelerationtimeintdouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetExpectAccelerationTime(int,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createcustomaxispropertyitemint" class="md-nav__link">
+    <span class="md-ellipsis">
+      CreateCustomAxisPropertyItem(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moveabsasyncintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveAbsAsync(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moverelasyncintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveRelAsync(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmoveasyncint" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMoveAsync(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmoveasync" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMoveAsync()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waituntilstopasyncint" class="md-nav__link">
+    <span class="md-ellipsis">
+      WaitUntilStopAsync(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waituntilstopasync" class="md-nav__link">
+    <span class="md-ellipsis">
+      WaitUntilStopAsync()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../istage_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IStageConfigインターフェース
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iaxisinfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IAxisInfoインターフェース
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kohzustage_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    KohzuStageConfigクラス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    サンプルコード
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            サンプルコード
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample_code/normal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基本功能的示例代码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample_code/polling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ステージ状態の更新と取得
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロパティ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プロパティ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stageconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      StageConfig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axesready" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesReady
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axesoriginready" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesOriginReady
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axesemergencystatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesEmergencyStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axescontrollererror" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesControllerError
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axessoftlimitstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      AxesSoftLimitStatus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      メソッド
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="メソッド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jogmoveintdouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      JogMove(int,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moveabsintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveAbs(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moverelintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveRel(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmoveint" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMove(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmove" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMove()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopall" class="md-nav__link">
+    <span class="md-ellipsis">
+      StopAll()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#releaseemergency" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReleaseEmergency()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateaxisstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      UpdateAxisStatus()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getexpectaccelerationtimeintdouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetExpectAccelerationTime(int,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createcustomaxispropertyitemint" class="md-nav__link">
+    <span class="md-ellipsis">
+      CreateCustomAxisPropertyItem(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moveabsasyncintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveAbsAsync(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moverelasyncintdoubledouble" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoveRelAsync(int,double,double)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmoveasyncint" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMoveAsync(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originmoveasync" class="md-nav__link">
+    <span class="md-ellipsis">
+      OriginMoveAsync()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waituntilstopasyncint" class="md-nav__link">
+    <span class="md-ellipsis">
+      WaitUntilStopAsync(int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waituntilstopasync" class="md-nav__link">
+    <span class="md-ellipsis">
+      WaitUntilStopAsync()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="istage">IStageインターフェース</h1>
+<p>名前空間: OptoCombToolkit.Libs.Embedded.Stages.Core.Apis</p>
+<p>アセンブリ: OptoCombToolkit.Libs.Embedded.Stages.Core.dll</p>
+<p>ステージの基本制御機能を提供するインターフェースです。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">interface</span><span class="w"> </span><span class="n">IStage</span>
+</span></code></pre></div>
+<h2 id="_1">プロパティ</h2>
+<h3 id="stageconfig">StageConfig</h3>
+<p>ステージの構成情報。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">IStageConfig</span><span class="w"> </span><span class="n">StageConfig</span><span class="p">{</span><span class="k">get</span><span class="p">;}</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p><a href="../istage_config/">IStageConfig</a>インターフェースタイプのステージ構成情報のオブジェクトインスタンスをリターンします。</p>
+<h3 id="positions">Positions</h3>
+<p>ステージの全軸の現在位置。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">double</span><span class="p">[]</span><span class="w"> </span><span class="n">Positions</span><span class="w"> </span><span class="p">{</span><span class="k">get</span><span class="p">;}</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>全軸の現在位置を格納する配列をリターンします。</p>
+<h3 id="axesready">AxesReady</h3>
+<p>ステージの全軸移動中かどうか。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">bool</span><span class="p">[]</span><span class="w"> </span><span class="n">AxesReady</span><span class="p">{</span><span class="k">get</span><span class="p">;}</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>ステージの全軸移動中かどうか状態を格納する配列をリターンします。</p>
+<p><code>true</code>の場合は、該当軸が静止で移動指令受付可能状態です。</p>
+<p><code>false</code>の場合は、該当軸が移動中です。</p>
+<h3 id="axesoriginready">AxesOriginReady</h3>
+<p>ステージの全軸が原点復帰済みかどうか。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">bool</span><span class="p">[]</span><span class="w"> </span><span class="n">AxesOriginReady</span><span class="p">{</span><span class="k">get</span><span class="p">;}</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>ステージの全軸が原点復帰済みかどうかを格納する配列をリターンします。。</p>
+<p><code>true</code>の場合は、該当軸が原点復帰済み状態です。</p>
+<p><code>false</code>の場合は、該当軸が原点復帰未実施状態です。</p>
+<h3 id="axesemergencystatus">AxesEmergencyStatus</h3>
+<p>ステージの全軸が非常停止かどうか。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">bool</span><span class="p">[]</span><span class="w"> </span><span class="n">AxesEmergencyStatus</span><span class="p">{</span><span class="k">get</span><span class="p">;}</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>ステージの全軸が非常停止かどうかを格納する配列をリターンします。</p>
+<p><code>true</code>の場合は、該当軸が非常停止中です。</p>
+<p><code>false</code>の場合は、該当軸が非常停止されていないこと。</p>
+<p><strong>備考</strong></p>
+<p>神津ステージの装置の仕様で、非常停止された場合は全軸が全部非常停止状態になります。
+よって、以下のコードで神津ステージが非常停止かどうかが感知可能です。
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">isStageEmergency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AxesEmergencyStatus</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">x</span><span class="o">=&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
+</span></code></pre></div></p>
+<h3 id="axescontrollererror">AxesControllerError</h3>
+<p>ステージの全軸がコントローラーエラーかどうか。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">bool</span><span class="p">[]</span><span class="w"> </span><span class="n">AxesControllerError</span><span class="p">{</span><span class="k">get</span><span class="p">;}</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>ステージの全軸がコントローラーエラーかどうかを格納する配列をリターンします。</p>
+<p><strong>備考</strong></p>
+<p>神津ステージの場合、コントローラーと軸が一対多のことがあるため、
+軸ごとにコントローラーエラーかどうかを判断する必要があります。</p>
+<h3 id="axessoftlimitstatus">AxesSoftLimitStatus</h3>
+<p>ステージの全軸がソフトリミットエラーかどうか。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">AxesSoftLimitStatus</span><span class="p">[]</span><span class="w"> </span><span class="n">AxesSoftLimitStatus</span><span class="p">{</span><span class="k">get</span><span class="p">;}</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>ステージの全軸がソフトリミットエラーかどうかを格納する配列をリターンします。</p>
+<p><code>WithinLimit</code>の場合は、該当軸がフトリミットエラーになっていないこと。</p>
+<p><code>OverPlusLimit</code>の場合は、該当軸が＋方向にソフトリミットエラーが発生していること。</p>
+<p><code>OverMinusLimit</code>の場合は、該当軸が-方向にソフトリミットエラーが発生していること。</p>
+<h2 id="_2">メソッド</h2>
+<h3 id="jogmoveintdouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> JogMove(int,double)</h3>
+<p>指定軸にジョグ運転。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">JogMove</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">speed</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><code>speed</code>:ジョグ移動速度。リニア軸の場合、単位はmm/secです。回転軸の場合、単位はdeg/secです。</p>
+<p><strong>サンプルコード</strong></p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">// ステージのインスタンスを取得します</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">IStage</span><span class="w"> </span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">KohzuStageConfig</span><span class="p">.</span><span class="n">DefaultConfig</span><span class="p">.</span><span class="n">GetStage</span><span class="p">();</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1">// 軸構成配列のインデックス０番の軸で10mm(deg)/sec速度でジョグ運転します</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">stage</span><span class="p">.</span><span class="n">JogMove</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">);</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1">// 同期でジョグ移動を停止します</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">stage</span><span class="p">.</span><span class="n">Stop</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="c1">// 非同期でジョグ移動を停止します</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">EStopStatus</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">stage</span><span class="p">.</span><span class="n">WaitUntilStopAsync</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="c1">// 非同期で移動停止した場合、戻り値で異常判断をします</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">EStopStatus</span><span class="p">.</span><span class="n">ErrorStop</span><span class="p">)</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="p">{</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">    </span><span class="c1">// 異常で移動停止された場合の処理をここに実装します</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="moveabsintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbs(int,double,double)</h3>
+<p>同期で軸を一定の速度で指定された位置に移動します。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">MoveAbs</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">targetPosition</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">speed</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><code>targetPosition</code>: 軸の移動先の目標位置です。リニア軸の場合、単位はmmです。回転軸の場合、単位はdegです。</p>
+<p><code>speed</code>:移動速度。リニア軸の場合、単位はmm/secです。回転軸の場合、単位はdeg/secです。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>同期方式のため、この関数実行完了後軸が既に静止状態とは限りません。</p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">// このAPIの使用場面は、多軸を同時に移動させ、その後多軸の移動完了まで待つことを想定しています。</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1">// ステージのインスタンスを取得します</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">IStage</span><span class="w"> </span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">KohzuStageConfig</span><span class="p">.</span><span class="n">DefaultConfig</span><span class="p">.</span><span class="n">GetStage</span><span class="p">();</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1">// インデックス番号0, 1, 2の三軸を同時に移動します</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="n">stage</span><span class="p">.</span><span class="n">MoveAbs</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">);</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">stage</span><span class="p">.</span><span class="n">MoveAbs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w"> </span><span class="mf">5.0</span><span class="p">);</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="n">stage</span><span class="p">.</span><span class="n">MoveAbs</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="c1">// 非同期で三軸の移動完了まで待ちます</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="n">IEnumerable</span><span class="o">&lt;</span><span class="n">EStopStatus</span><span class="o">&gt;</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">stage</span><span class="p">.</span><span class="n">WaitUntilStopAsync</span><span class="p">();</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="c1">// 非同期で移動停止した場合、戻り値で異常判断をします</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="k">if</span><span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">EStopStatus</span><span class="p">.</span><span class="n">ErrorStop</span><span class="p">))</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="p">{</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">  </span><span class="c1">// 一軸でも異常が起きた場合のエラーハンドリングをここで実装します</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>多軸を同時に移動する前に、各軸が衝突しないことを確認してください。</p>
+</div>
+<h3 id="moverelintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveRel(int,double,double)</h3>
+<p>同期で単軸を一定の速度で現在の位置から指定されたオフセット値で移動します。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">MoveRel</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">distance</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">speed</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><code>distance</code>: オフセット値。リニア軸の場合、単位はmmです。回転軸の場合、単位はdegです。オフセット値には符号付き可能です、
+軸の移動方向に一致します。</p>
+<p><code>speed</code>:移動速度。リニア軸の場合、単位はmm/secです。回転軸の場合、単位はdeg/secです。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>同期方式のため、この関数実行完了後軸が既に静止状態とは限りません。</p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<p><a href="#moveabsintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbs(int,double,double)</a>に参照してください。</p>
+<h3 id="originmoveint"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> OriginMove(int)</h3>
+<p>同期で単軸に対し原点復帰を行います。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">OriginMove</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>同期方式のため、この関数実行完了後軸が既に静止状態とは限りません。</p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<p><a href="#moveabsintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbs(int,double,double)</a>に参照してください。</p>
+<h3 id="originmove"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> OriginMove()</h3>
+<p>同期で全軸に対し原点復帰を行います。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">OriginMove</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>同期方式のため、この関数実行完了後軸が既に静止状態とは限りません。</p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<p><a href="#moveabsintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbs(int,double,double)</a>に参照してください。</p>
+<h3 id="stopint"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> Stop(int)</h3>
+<p>同期で単軸に対し明示的に移動停止指令をします。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">Stop</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>同期方式のため、この関数実行完了後軸が既に静止状態とは限りません。</p>
+</div>
+<h3 id="stopall"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> StopAll()</h3>
+<p>同期で全軸に対し明示的に移動停止指令をします。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">StopAll</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>同期方式のため、この関数実行完了後軸が既に静止状態とは限りません。</p>
+</div>
+<h3 id="releaseemergency"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> ReleaseEmergency()</h3>
+<p>非常停止が起きた場合、非常停止を解除する。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">ReleaseEmergency</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>非常停止解除が失敗した場合（例えば物理非常停止スイッチが解除されていないことまたは
+ステージの非常停止原因が解消されていないこと）、非常停止解除すると例外が吐き出されることがあります。</p>
+</div>
+<h3 id="updateaxisstatus"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> UpdateAxisStatus()</h3>
+<p>ステージの情報更新します。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">void</span><span class="w"> </span><span class="nf">UpdateAxisStatus</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>このAPIはステージの情報を更新するのみ機能します。更新後、必要な情報取得するのに明示的に各プロパティをアクセスする必要があります。</p>
+</div>
+<h3 id="getexpectaccelerationtimeintdouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> GetExpectAccelerationTime(int,double)</h3>
+<p>該当軸が静止状態から指定の速度までの加速時間を計算します。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">double</span><span class="w"> </span><span class="nf">GetExpectAccelerationTime</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">speed</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><code>speed</code>:移動速度。リニア軸の場合、単位はmm/secです。回転軸の場合、単位はdeg/secです。</p>
+<h3 id="createcustomaxispropertyitemint"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> CreateCustomAxisPropertyItem(int)</h3>
+<p>軸ごとの内部パラメータを取得します。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kt">object?</span><span class="w"> </span><span class="n">CreateCustomAxisPropertyItem</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>このAPIは開発調整向けで、基本は使用することはありません。</p>
+</div>
+<h3 id="moveabsasyncintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbsAsync(int,double,double)</h3>
+<p>非同期で軸を一定の速度で指定された位置に移動します。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">Task</span><span class="o">&lt;</span><span class="n">EStopStatus</span><span class="o">&gt;</span><span class="w"> </span><span class="n">MoveAbsAsync</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">targetPosition</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">speed</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><code>targetPosition</code>: 軸の移動先の目標位置です。リニア軸の場合、単位はmmです。回転軸の場合、単位はdegです。</p>
+<p><code>speed</code>:移動速度。リニア軸の場合、単位はmm/secです。回転軸の場合、単位はdeg/secです。</p>
+<p><strong>戻り値</strong></p>
+<p>非同期実行タスクをリターンします。非同期実行結果は<code>EStopStatus</code>のデータが内包されています。</p>
+<p><code>NormalStop</code>: 正しく移動完了したことを表します。</p>
+<p><code>ErrorStop</code>: 移動中に軸にエラーが発生し、途中停止されたことを表します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>EStopStatus</code>データタイプは<code>OpotoCombToolkit.Libs.Embedded.Core.nupkg</code>のパッケージにあるため，依頼関係パッケージとしてプロジェクトに
+インストールされていることをご確認ください。</p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1">// 同期で軸の移動して、その軸の移動完了まで待ちます</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">stage</span><span class="p">.</span><span class="n">MoveAbs</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">);</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="n">EStopStatus</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">stage</span><span class="p">.</span><span class="n">WaitUntilStopAsync</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="c1">// 上記の二行コードを非同期でまとめることができます</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="n">EStopStatus</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">stage</span><span class="p">.</span><span class="n">MoveAbsAsync</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">10.0</span><span class="p">,</span><span class="w"> </span><span class="mf">10.0</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="moverelasyncintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveRelAsync(int,double,double)</h3>
+<p>非同期で単軸を一定の速度で現在の位置から指定されたオフセット値で移動します。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">Task</span><span class="o">&lt;</span><span class="n">EStopStatus</span><span class="o">&gt;</span><span class="w"> </span><span class="n">MoveRelAsync</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">distance</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">speed</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><code>distance</code>: オフセット値。リニア軸の場合、単位はmmです。回転軸の場合、単位はdegです。オフセット値には符号付き可能です、 軸の移動方向に一致します。</p>
+<p><code>speed</code>:移動速度。リニア軸の場合、単位はmm/secです。回転軸の場合、単位はdeg/secです。</p>
+<p><strong>戻り値</strong></p>
+<p>非同期実行タスクをリターンします。非同期実行結果は<code>EStopStatus</code>のデータが内包されています。</p>
+<p><code>NormalStop</code>: 正しく移動完了したことを表します。</p>
+<p><code>ErrorStop</code>: 移動中に軸にエラーが発生し、途中停止されたことを表します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>EStopStatus</code>データタイプは<code>OpotoCombToolkit.Libs.Embedded.Core.nupkg</code>のパッケージにあるため，依頼関係パッケージとしてプロジェクトに
+インストールされていることをご確認ください。</p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<p><a href="#moveabsasyncintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbsAsync(int,double,double)</a>に参照してください。</p>
+<h3 id="originmoveasyncint"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> OriginMoveAsync(int)</h3>
+<p>非同期で単軸に対し原点復帰を行います。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">Task</span><span class="o">&lt;</span><span class="n">EStopStatus</span><span class="o">&gt;</span><span class="w"> </span><span class="n">OriginMoveAsync</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><strong>戻り値</strong></p>
+<p>非同期実行タスクをリターンします。非同期実行結果は<code>EStopStatus</code>のデータが内包されています。</p>
+<p><code>NormalStop</code>: 正しく移動完了したことを表します。</p>
+<p><code>ErrorStop</code>: 移動中に軸にエラーが発生し、途中停止されたことを表します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>EStopStatus</code>データタイプは<code>OpotoCombToolkit.Libs.Embedded.Core.nupkg</code>のパッケージにあるため，依頼関係パッケージとしてプロジェクトに
+インストールされていることをご確認ください。<strong>サンプルコード</strong></p>
+</div>
+<p><a href="#moveabsasyncintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbsAsync(int,double,double)</a>に参照してください。</p>
+<h3 id="originmoveasync"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> OriginMoveAsync()</h3>
+<p>非同期で全軸に対し原点復帰を行います。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">Task</span><span class="o">&lt;</span><span class="n">IEnumerable</span><span class="o">&lt;</span><span class="n">EStopStatus</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">OriginMoveAsync</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>非同期実行タスクをリターンします。非同期実行結果は<code>EStopStatus</code>のデータが内包されています。</p>
+<p><code>NormalStop</code>: 正しく移動完了したことを表します。</p>
+<p><code>ErrorStop</code>: 移動中に軸にエラーが発生し、途中停止されたことを表します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>EStopStatus</code>データタイプは<code>OpotoCombToolkit.Libs.Embedded.Core.nupkg</code>のパッケージにあるため，依頼関係パッケージとしてプロジェクトに
+インストールされていることをご確認ください。<strong>サンプルコード</strong></p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<p><a href="#moveabsasyncintdoubledouble"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> MoveAbsAsync(int,double,double)</a>に参照してください。</p>
+<h3 id="waituntilstopasyncint"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> WaitUntilStopAsync(int)</h3>
+<p>非同期で軸の移動完了まで待ちます。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">Task</span><span class="o">&lt;</span><span class="n">EStopStatus</span><span class="o">&gt;</span><span class="w"> </span><span class="n">WaitUntilStopAsync</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">axisNo</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>パラメータ</strong></p>
+<p><code>axisNo</code>:軸のインデックス番号です。</p>
+<p><strong>戻り値</strong></p>
+<p>非同期実行タスクをリターンします。非同期実行結果は<code>EStopStatus</code>のデータが内包されています。</p>
+<p><code>NormalStop</code>: 正しく移動完了したことを表します。</p>
+<p><code>ErrorStop</code>: 移動中に軸にエラーが発生し、途中停止されたことを表します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>EStopStatus</code>データタイプは<code>OpotoCombToolkit.Libs.Embedded.Core.nupkg</code>のパッケージにあるため，依頼関係パッケージとしてプロジェクトに
+インストールされていることをご確認ください。<strong>サンプルコード</strong></p>
+</div>
+<p><strong>サンプルコード</strong></p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1">// 同期で単軸の原点復帰を行います</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">stage</span><span class="p">.</span><span class="n">OriginMove</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1">// 非同期で原点復帰完了まで待ちます</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="n">EStopStatus</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">stage</span><span class="p">.</span><span class="n">WaitUntilStopAsync</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="waituntilstopasync"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> WaitUntilStopAsync()</h3>
+<p>非同期で全軸の移動完了まで待ちます。</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">Task</span><span class="o">&lt;</span><span class="n">IEnumerable</span><span class="o">&lt;</span><span class="n">EStopStatus</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">WaitUntilStopAsync</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>戻り値</strong></p>
+<p>非同期実行タスクをリターンします。非同期実行結果は各軸の<code>EStopStatus</code>データを格納する配列が内包されています。</p>
+<p><strong>サンプルコード</strong></p>
+<p><a href="#waituntilstopasyncint"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> WaitUntilStopAsync(int)</a>に参照してください。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 OptoComb,Inc.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">同意</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">サイトの設定</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.expand", "navigation.path", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
+      
+    
+  </body>
+</html>
