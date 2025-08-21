@@ -1,143 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>None./</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="None"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/"/>
     </url>
     <url>
-        <loc>Noneapi/iaxisinfo/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/iaxisinfo/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/iaxisinfo/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/iaxisinfo/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/iaxisinfo/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/iaxisinfo/"/>
     </url>
     <url>
-        <loc>Noneapi/istage/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/istage/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/istage/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/istage/"/>
     </url>
     <url>
-        <loc>Noneapi/istage_config/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/istage_config/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage_config/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage_config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/istage_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/istage_config/"/>
     </url>
     <url>
-        <loc>Noneapi/kohzustage_config/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/kohzustage_config/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/kohzustage_config/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/kohzustage_config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/kohzustage_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/kohzustage_config/"/>
     </url>
     <url>
-        <loc>Noneintro/management/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/intro/management/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/management/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/management/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/intro/management/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/intro/management/"/>
     </url>
     <url>
-        <loc>Noneintro/provide/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/intro/provide/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/provide/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/provide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/intro/provide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/intro/provide/"/>
     </url>
     <url>
-        <loc>Nonequick_start/quick_start/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/quick_start/quick_start/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonequick_start/quick_start/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/quick_start/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/quick_start/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/quick_start/quick_start/"/>
     </url>
     <url>
-        <loc>Nonesample_code/normal/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/sample_code/normal/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/normal/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/normal/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/sample_code/normal/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/sample_code/normal/"/>
     </url>
     <url>
-        <loc>Nonesample_code/polling/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/sample_code/polling/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/polling/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/polling/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/sample_code/polling/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/sample_code/polling/"/>
     </url>
     <url>
-        <loc>Nonezh/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="None"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/"/>
     </url>
     <url>
-        <loc>Nonezh/api/iaxisinfo/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/iaxisinfo/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/iaxisinfo/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/iaxisinfo/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/iaxisinfo/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/iaxisinfo/"/>
     </url>
     <url>
-        <loc>Nonezh/api/istage/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/istage/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/istage/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/istage/"/>
     </url>
     <url>
-        <loc>Nonezh/api/istage_config/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/istage_config/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/istage_config/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/istage_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/istage_config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/istage_config/"/>
     </url>
     <url>
-        <loc>Nonezh/api/kohzustage_config/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/kohzustage_config/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/api/kohzustage_config/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneapi/kohzustage_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/api/kohzustage_config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/api/kohzustage_config/"/>
     </url>
     <url>
-        <loc>Nonezh/intro/management/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/intro/management/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/management/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/management/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/intro/management/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/intro/management/"/>
     </url>
     <url>
-        <loc>Nonezh/intro/provide/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/intro/provide/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/intro/provide/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Noneintro/provide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/intro/provide/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/intro/provide/"/>
     </url>
     <url>
-        <loc>Nonezh/quick_start/quick_start/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/quick_start/quick_start/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/quick_start/quick_start/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonequick_start/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/quick_start/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/quick_start/quick_start/"/>
     </url>
     <url>
-        <loc>Nonezh/sample_code/normal/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/sample_code/normal/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/normal/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/normal/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/sample_code/normal/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/sample_code/normal/"/>
     </url>
     <url>
-        <loc>Nonezh/sample_code/polling/</loc>
+        <loc>https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/sample_code/polling/</loc>
         <lastmod>2025-08-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/sample_code/polling/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonesample_code/polling/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/zh/sample_code/polling/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://optocomb-inc.github.io/OptoCombToolkit.Stage.Documentations/sample_code/polling/"/>
     </url>
 </urlset>
