@@ -1,0 +1,143 @@
+site_name: OptoComb Kohzu Stage SDK Documentation
+site_author: OptoComb,Inc.
+repo_url: https://github.com/OptoComb-Inc/OptoCombToolkit.Stage.Documentations
+repo_name: OptoCombToolkit.Stage.Documentations
+copyright: "Copyright &copy; 2025 OptoComb,Inc."
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    annotation: material/plus-circle
+
+  features:
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+extra:
+  version:
+    provider: mike
+    default: latest
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+nav:
+  - Home: index.md
+  - Introduction:
+      - intro/provide.md
+      - intro/management.md
+  - QuickStart: quick_start/quick_start.md
+  - Api:
+      - api/istage.md
+      - api/istage_config.md
+      - api/iaxisinfo.md
+      - api/kohzustage_config.md  
+  - SampleCode:
+      - sample_code/normal.md
+      - sample_code/polling.md
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+        - zh
+  - print-site:
+      add_to_navigation: false
+      print_page_title: "Print Site"
+      print_page_basename: "print_page"
+      add_print_site_banner: false
+      # Table of contents
+      add_table_of_contents: false
+      toc_title: "Table of Contents"
+      toc_depth: 6
+      # Content-related
+      add_full_urls: false
+      enumerate_headings: true
+      enumerate_figures: true
+      add_cover_page: true
+      cover_page_template: ""
+      path_to_pdf: ""
+      include_css: true
+      enabled: true
+      exclude:
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          name: English
+          build: false
+        - locale: ja
+          name: 日本語
+          build: true
+          default: true
+          site_name: OptoComb 神津ステージ開発ドキュメント
+          nav_translations:
+            Home: はじめに
+            Introduction: イントロダクション
+            QuickStart: クイックスタート
+            Api: APIリファレンス
+            SampleCode: サンプルコード
+        - locale: zh
+          name: 中文（简体）
+          build: true
+          site_name: OptoComb 神津精机平台开发文档
+          nav_translations:
+            Home: 前言
+            Introduction: 简单介绍
+            QuickStart: 快速开始
+            Api: Api说明
+            SampleCode: 示例代码
+
+  - mike:
+      version_selector: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+
+extra_javascript:
+  - javascripts/shortcuts.js
+extra_css:
+  - stylesheets/extra.css
